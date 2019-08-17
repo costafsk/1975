@@ -1,0 +1,119 @@
+.p-home {
+    background-color: $p-purple-clean;
+    .p-carousel-article {
+        .p-item-fixed {
+            position: absolute;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+
+            .p-header {
+                display: flex;
+                justify-content: flex-start;
+                margin: 0% 2%;
+                .p-title {
+                    font-weight: bold;
+                    text-shadow: 1px 1px rbga(0, 0, 0, 0.4);
+                }
+            }
+            .p-button {
+                @media(min-width: 900px) {
+                    display: none;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 700px;
+                button {
+                    @extend .p-button-design;
+                }
+            }
+        }
+    }
+    .p-one {
+        .p-article {
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+            margin-left: 4%;
+            margin-right: 4%;
+
+            h3 {
+                @media (max-width: 900px) {
+                    font-size: 3em;
+                }
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .p-explorer {
+            display: flex;
+            justify-content: center;
+            @media (max-width: 900px) {
+                margin-top: 2%;
+            }
+            margin-top: 6%;
+            margin-bottom: 4%;
+            .p-btn-explorer {
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        }
+    }
+    .p-signIn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .p-title {
+            font-size: 3em;
+            color: $black-modern;
+            font-weight: bold;
+        }
+        .p-btn-signIn {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 3%;
+            flex-direction: column;
+
+            .p-btn-go {
+
+            }
+            .p-btn-signUp {
+
+            }
+            .p-btn-github {
+                @extend .p-btn-social;
+                background-color: $github-color;
+            }
+            .p-btn-github:hover {
+                background-color: $github-color-shadow-white;
+                cursor: pointer;
+            }
+            .p-btn-google {
+                @extend .p-btn-social;
+                background-color: $google-color;
+            }
+            .p-btn-google:hover {
+                background-color: $google-color-shadow-white;
+                cursor: pointer;
+            }
+        }
+    }
+    .p-aside-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 700px;
+        align-items: flex-end;
+        
+        i {
+            margin: 2.5% 1%;
+            color: $p-purple;
+            text-shadow: 1px 1px rgba(0,0,0,0.4);
+            font-size: 1.6em;
+        }
+    }
+}

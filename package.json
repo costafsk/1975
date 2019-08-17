@@ -4,8 +4,8 @@
   "description": "\"TCA\"",
   "main": "index.js",
   "scripts": {
-    "dev": "npx parcel src/views/home.html",
-    "build": "npx parcel build src/views/home.html",
+    "dev": "npx parcel src/views/home/home.html",
+    "build": "npx parcel build src/views/home/home.html",
     "gulp": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

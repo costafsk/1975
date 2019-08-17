@@ -17,7 +17,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('html', () => {
-    return gulp.src('./src/views/*.html')
+    return gulp.src('./src/views/*/*.html')
         .pipe(html({
             collapseWhitespace: true
         }))
@@ -27,6 +27,6 @@ gulp.task('html', () => {
 // * Default is a Observable :)*
 
 gulp.task('default', () => {
-    gulp.watch('./src/views/*.html', gulp.series('html'));
+    gulp.watch('./src/views/*/*.html', gulp.series('html'));
     gulp.watch('./src/styles/sass/master.scss', gulp.series('sass'));
 });
