@@ -8,13 +8,14 @@ const init = () => {
     const carouselArticleComponent = document.querySelector('.p-carousel-article');
     const mainComponent = document.querySelector('.p-main');
 
-    const carouselOptions = {
-        fullWidth: true,
-        indicators: true
-    }
+    const modalSignUpComponent = document.querySelector('#p-modal-signUp');
+    const modalSignInComponent = document.querySelector('#p-modal-signIn');
+
+    const modalSignUp = M.Modal.init(modalSignUpComponent);
+    const modalSignIn = M.Modal.init(modalSignInComponent);
     
-    const carouselArticle = M.Carousel.init (carouselArticleComponent, carouselOptions);
-    const carouselForm = M.Carousel.init (carouselFormComponent, carouselOptions);
+    let carouselArticle;
+    let carouselForm;
 
     // Setting height (browser resizing and browser load);
     
@@ -29,6 +30,14 @@ const init = () => {
         mainComponent.classList.remove('s7', 's12');
     
         mainComponent.classList.add(grid);
+
+        carouselArticle = M.Carousel.init(carouselArticleComponent, {
+            fullWidth: true,
+            indicators: true
+        });
+        carouselForm = M.Carousel.init(carouselFormComponent, {
+            fullWidth: true
+        });
     }
 
     setHeight();
@@ -49,7 +58,7 @@ const init = () => {
     });
 
     // Carousel Article
-    setInterval(() => carouselArticle.next(1), 5000);
+    // setInterval(() => carouselArticle.next(1), 5000);
 
     // Carousel Form
 

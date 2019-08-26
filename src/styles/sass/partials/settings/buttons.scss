@@ -33,6 +33,15 @@
     }
 }
 
+.p-btn-sign {
+    padding: 10px 80px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
 .p-btn-social:hover {
     cursor: pointer;
 }

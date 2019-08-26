@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "npx parcel src/views/home/home.html",
     "build": "npx parcel build src/views/home/home.html",
+    "deploy": "npm run build | npx gulp default",
     "gulp": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
