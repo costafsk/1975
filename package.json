@@ -4,7 +4,7 @@
   "description": "\"TCA\"",
   "main": "index.js",
   "scripts": {
-    "dev": "npx parcel src/views/home/home.html",
+    "dev": "npx parcel src/views/home/home.html || gulp",
     "build": "npx parcel build src/views/home/home.html",
     "deploy": "npm run build | npx gulp default",
     "gulp": "npx gulp",
