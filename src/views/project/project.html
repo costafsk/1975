@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./../../styles/css/master.css">
+    <title>Pounder - Project</title>
+</head>
+<body>
+    <header class="p-internal-header-project">
+        <div class="row">
+            <div class="col left">
+                <i class="fas fa-chevron-left" onclick="history.go(-1)"></i>
+            </div>
+            <div class="col left">
+                <img src="./../../img/placeholder.jpg" alt="perfil" class="p-perfil">
+            </div>
+            <div class="col">
+                <h5>Username Surname</h5>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4>Fazer proposta</h4>
+            <form action="">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="valor" type="text" class="validate">
+                        <label for="valor">Prazo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="valor" type="number" class="validate">
+                        <label for="valor">Valor:</label>
+                    </div>
+                <div class="input-field col s6">
+                    <select>
+                    <option value="" disabled selected>Moeda</option>
+                    <option value="1">Real</option>
+                    <option value="2">Dolar</option>
+                    </select>
+                    <label>Moeda</label>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Description</label>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green center btn-flat">Fazer proposta</a>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Fazer Denuncia</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>Motivos</option>
+                                <option value="1">Motivo 1</option>
+                                <option value="2">Motivo 2</option>
+                                <option value="3">Motivo 3</option>
+                            </select>
+                            <label>Motivos</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Description</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green center btn-flat">Denunciar</a>
+            </div>
+        </div>
+        <div class="row p-propostas-valor">
+            <div class="col s3 left">
+                <h5>Propostas: 4</h5>
+            </div>
+            <div class="col s2 right">
+                <h5>Valor: $300</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 right">
+                <h5>3 dias</h5>
+            </div>
+        </div>
+        <div class="p-internal-desc">
+            <h5>Descrição</h5>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+        </div>
+        <div class="p-footer-internal-project">
+            <div class="skills">
+                <h5>Requisitos:</h5>
+                <i class="fas fa-database"></i>
+                <i class="fab fa-node-js"></i>
+            </div>
+            <div class="row right btn-action-project">
+                <div class="col">
+                    <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">fazer proposta</a>
+                </div>
+                <div class="col">
+                    <a class="waves-effect waves-light btn-large modal-trigger" href="#modal2">Denunciar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./../../../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
